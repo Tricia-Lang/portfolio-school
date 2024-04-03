@@ -1,0 +1,203 @@
+
+DAT 325 Project One
+Data Quality Plan
+
+
+Purpose Statement:
+	High quality data is important to all businesses. It helps ensure outputs that are useful to the organization. The data needs to act in a way that is expected to be useful for the business. Data that is lower quality increases the risk to the business. This can mean loss of profit, loss of productivity, poor business decisions, and greater workload to fix the data errors. 
+	With high quality data, informed business decisions can occur. This can include knowing the on-hand stock of an item or which areas of the globe have the highest number of consumers of certain products, which can, in turn, lead to targeted advertising and a better investment of the marketing budget. As well, knowing the customer base can lead to greater satisfaction since their needs can be known and anticipated. This will lead to a competitive edge over other businesses with poorer quality data.
+
+Organizational Goals: 
+	The organizational goals for the data quality will first include identifying what the business needs are for the data that is coming over from Wayne Enterprises. Knowing what data is needed, what format it is needed in, and how it will be used is important for the creation and integration of the database. 
+	This will also involve designating a data quality team. This will be the team of individuals who are going to oversee the data quality process. Evaluating the data for the degree to which the data follows the correct format and patterns, is consistent and complete, as well as highlighting any abnormalities will head off potential issues later (Shen, 2019). This will also be repeated as data is entered periodically, but upon this initial transfer of data between companies the higher the quality of incoming data the easier the maintenance of high-quality data will be going forward. 
+	A second over-reaching goal will be for the inspection of the data as it is coming in, utilizing data profiling and visualizations, will help with identifying the quality of the data that is coming over from Wayne Enterprises. By creating summary statistics about the data, ensuring that it meets standards, identify if there are missing values, ensuring the tables have primary and foreign keys, it allows for a greater understanding of the data and what changes need to occur in order to have it meet the needs of Bruce, Inc. This will help guide where the cleaning needs to occur and ensure that the data will meet the high-quality data standards expected. 
+	A clear ETL pipeline will be developed with the ability to enable data lineage tracing. This is an important part of the data governance that will allow for more reliable data outputs and an easier identification of problem areas that may become evident later (Shen, 2019). Knowing from where the data comes allows for a greater understanding of what the data means and whether it is representing what it intends to represent as well.  
+
+Data Quality Characteristics and Procedures: 
+	The core dimensions that define data quality are completeness, validity, uniqueness, timeliness, accuracy, and consistency. These are the dimensions that are the industry standard for rating the quality of the data, which allows for confidence in business decisions as well as ensuring adherence to laws and guidelines of the industry. 
+	The completeness of the data speaks to whether all the necessary information is present. An example of this would be if there are missing elements that are needed, such as a phone number or ISBN or other information that is a requirement for the business. Incomplete data can lead to inaccurate stock counts or inability to contact a customer, or other failing in the business strategy.
+	Uniqueness, sometimes called conformity, is how well the data conforms to the formats that are needed. This can mean that the constraints that are established are met, whether it be a mandatory column being filled in, a foreign-key constraint that must match a primary key in the referencing table, or patterns that must be met for fields such as phone numbers (Elgabry, 2020). The validity of the data ensures that it can be read, and it will correspond with other data points.
+	The validity of the data is also known as the integrity of the data. This speaks to the ability of the data to be traced and connected to other data, and not orphaned (Elgabry, 2020). The integrity of the data allows for connections to be made for the analysis.
+	Timeliness of data is the ability for it to be available when it is needed. If there are business constraints that require outputs in a specified timeframe then the data must be able to meet those requirements. This can be an expectation for a bank balance to be updated instantaneously with each transaction or a quarterly report aggregated by a certain date. 
+	Accuracy is one of the most important of the core dimensions. This is measuring whether the data is true. Errors with accuracy will inevitably lead to poor outcomes from any data analysis as an accurate analysis cannot be made reliably, or may be undefendable, with inaccurate data. 
+	Consistency of data is whether the data is consistent across the same data set or with multiple linked data sets. In one area data may indicate a person lives in a rental property, but in another area they have a mortgage payment listed. This would be flagged as contradictory information due to the inconsistencies, potentially leading to erroneous outcomes.
+
+Security and Personnel Responsibility Plan: 
+	Privacy of data as it is being transferred from one organization to another will be important. The servers on which data are stored increase the risk to the data. This can include confidentiality issues, data integrity problems, as well as availability complications. The servers should be accessible only to those who need to access it. This will involve a requirement for transactions to follow ACID Properties (atomicity, consistency, isolation, and durability) to ensure that the data integrity remains intact (IBM, 2020). 
+	The data that has been received from Wayne Enterprises is also subject to privacy controls that were instituted upon the collection of that data. It will be important to ensure that future use of that data falls within what is within the agreement of any individual’s data given to Wayne Enterprises initially. If there is a limitation to the scope of use for the data when gathered, that will be the limitation for Bruce, Inc. as well. 
+	The security of the data will be the responsibility of all who have any access to it. This will include following protocols to ensure individual safeguards for the data, such as secure passwords, using secure multi-level encryption for the server, and having all access points protected with antivirus software. 
+
+
+
+ 
+References
+Elgabry, O. (2020, April 18). The Ultimate Guide to Data Cleaning - Towards Data Science. Medium. https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4
+IBM. (2020, November 2). IBM Knowledge Center. https://www.ibm.com/support/knowledgecenter/SSGMCP_5.4.0/product-overview/acid.html
+Shen, S. (2019, July 29). 7 Steps to Ensure and Sustain Data Quality - Towards Data Science. Medium. https://towardsdatascience.com/7-steps-to-ensure-and-sustain-data-quality-3c0040591366
+
+
+
+
+DAT 325 Project Two Template
+Executive Summary Report
+
+Data Set Anomalies
+
+Key Value	Description of Anomaly	Plan for Resolution
+1106026572	Name- Last name missing	Leave as an empty string if this cannot be reconciled by matching the employee number to an employee last name in another table/database. If empty string violates the “not null” designation, substitute “ZZZZZ, William” for the employee name. 
+1311063172 	Name- Extra space between last name and first	Trim on import
+1108028108	Name- Extra space between last name and first	Trim on import
+1306058816 	Name- Extra space between last name and first	Trim on import
+1308060959	Pay Rate- negative number	Remove negative by imparting abs() function
+1109029366	Zip- invalid number and 6 digits	Cross-reference address and zip to correct, truncate to 5 digits if cannot be completed and leave as a dummy zip of 99999
+1304055947	Age/DOB- inconsistent (year of birth 1919, age 41)	Ignore Age and enter 1/1/1900 for DOB, to be corrected when cross-referenced
+1312063507	MaritalStatus- missing	Enter “N/A” for marital status field
+1301052347	MaritalStatus- missing	Enter “N/A” for marital status field
+1104025243	MaritalStatus- missing	Enter “N/A” for marital status field
+1108027853	MaritalStatus- missing	Enter “N/A” for marital status field
+1403066194	CitizenDescrip- not matching data expectation, states “Eligible NonCitizen”	Change to Non-Citizen
+1011022863	CitizenDescrip- not matching data expectation, states “Eligible NonCitizen”	Change to Non-Citizen
+1411071506	CitizenDescrip- not matching data expectation, states “Eligible NonCitizen”	Change to Non-Citizen
+1206043417	CitizenDescrip- not matching data expectation, states “Eligible NonCitizen”	Change to Non-Citizen
+1407069280	Date of Hire- missing; Reason for Term/Days Employed- inconsistent,  states Has Not Started Yet and Days Employed greater than 0  	Enter 1/1/1900 for date of hire and cross-reference for accurate date. Delete Reason for Termination. Ignore Days Employed as will not be imported.
+1211050782	Date of Termination/Reason for Term- inconsistent, states still employed with a termination date	Delete Reason for Termination
+1211050782	Date of Termination/Reason for Term- inconsistent, states still employed with a termination date	Delete Reason for Termination
+904013591	Days Employed/Reason for Term- inconsistent, states Has not started yet with days employed greater than 0	Delete Reason for Termination
+1010022337	Days Employed/Reason for Term- inconsistent, states Has not started yet with days employed greater than 0	Delete Reason for Termination
+1311063172	Days Employed/Reason for Term- inconsistent, states Has not started yet with days employed greater than 0	Delete Reason for Termination
+1412071562	Reason for Term/Employment Status- inconsistent, states hours are reason and also terminated for cause	Delete Reason for Termination & delete Employment Status
+1102023965	Reason for Term/Employment Status- inconsistent, states performance as reason and voluntarily terminated	Delete Reason for Termination & delete Employment Status
+
+Key Value	Description of Anomaly	Plan for Resolution
+1501072124	Performance Score- undefined entry	Column of Performance Score data is not utilized in Bruce, Inc. database. Notification only and no action needed.
+1403066069; 
+1307060188; 
+1101023612; 
+1308060959; 
+1101023540; 
+808010278; 
+1110029732; 
+1212052023; 
+1003018246; 
+1301052124; 
+1301052347; 
+1411071506; 
+1105025718; 
+1102024173; 
+1311063172; 
+904013591; 
+1203032255; 
+1012023013; 
+1010022337; 
+1307059817	Performance Score/Date of Hire- inconsistent, values do not match the number of dates employed. Possibly compliance issue with performance evals. 	Column of Performance Score data is not utilized in Bruce, Inc. database. Notification only and no action needed.
+
+
+
+Header Name From File	Data Types Note
+Employee Name 	Names need to be split into First (EmployeeFName) and Last (EmployeeLName)
+Employee Number	Ok
+Age	Will not use
+Pay Rate	Round to nearest whole number instead of decimals
+State	Ok
+Zip	Ok
+DOB	Ok
+MaritalStatus	Change data type to INT, coding 0=Single, 1=Married, 2-N/A
+Sex	Change data coding to 0=Male, 1=Female, 2=N/A
+CitizenDesc	Change data coding to 0=Not a US Citizen, 1-US Citizen, 2=N/A
+Hispanic/Latino	Will not use
+RaceDesc	Change data coding to RaceDescription table 
+Date of Hire	Ok
+Days Employed	Will not use
+Date of Termination	Ok
+Reason for Term	Ok
+Employment Status	Ok
+Department	Ok
+Position	Ok
+Manager Name	Will not use
+Employee Source	Will not use
+Performance Score	Will not use
+Data Types
+
+
+Specific Transformations Needed to Join the Data
+
+Header Name From File	Excel Function One	Excel Function Two
+Employee Name 	In EmployeeFName: 
+=TRIM(RIGHT(A2:A106,LEN(A2:A106)-FIND(",",A2:A106)))	In EmployeeLName: =TRIM(LEFT(A2:A106,FIND(",",A2:A106)-1))
+Employee Number	=B2:B106	
+Pay Rate	=ROUND(D2:D106,0)	
+State	=E2:E106	
+Zip	=F2:F106	
+DOB	=G2:G106	
+MaritalStatus	=IF(H2:H106="Married", 1, IF(H2:H106="NotMarried", 0, IF(H2:H106="N/A", 2)))	
+Sex	=IF(I2="Male", 0, IF(I2="Female", 1, IF(I2="N/A", 2)))	
+CitizenDesc	=IF(J2="Non-Citizen", 0, IF(J2="US Citizen", 1, IF(J2="N/A", 2)))	
+RaceDesc	=INDEX('HR Data Dictionary from Bruce '!H3:H8, MATCH('HR Data from Wayne Enterprise'!L2, 'HR Data Dictionary from Bruce '!G3:G8, 0))	
+Date of Hire	=M2:M106	
+Date of Termination	=O2:O106	
+Reason for Term	=P2:P106	
+Employment Status	=Q2:Q106	
+Department	=R2:R106	
+Position	=S2:S106	
+
+
+Executive Summary
+
+	The data set from was evaluated across the core dimensions to determine the quality. With a guideline for evaluation of this data adapted from DAMA UK (Askham et al., 2013), how well each dimension was met was calculated, and a plan of action was determined. The dimensions were each rated on a scale of 1 to 4, with 1 being unacceptable, 2 needs improvement, 3 good, and 4 excellent. All scores below 4 will need to be examined more closely and the presence of multiple scores of 1 or 2 will raise questions about the usefulness of this data set. Measures of percentages of data that meet the quality dimension specifications are calculated based on 17 columns that will be used in the Bruce, Inc. database and the 105 rows of employee data. 
+	The dimension of timeliness was difficult to ascertain, as there were numerous instances of the employee performance outcomes not documented in a way that matched the expected completion of the performance review. In 20 of the 105 employees, the performance review was either not completed in the timeframe expected or the database was not updated. While the category of Performance Score is not one that will be imported to our company’s database, it does raise questions about whether termination dates are updated quickly or if there are individuals who have been terminated, but it is not noted in this database. Timeliness is an area that needs improvement and moving forward the expectation would be that any changes to the employee database would be done in a timely fashion. The score for this dimension is 2. 
+	The completeness of the data set varied across the different fields. 99% of the names were filled in completely with only 1% missing. This will be rectified with a dummy last name for the one missing until it can be cross-referenced. This is a field that is designated not null in our company’s database and will not pass without an entry and further missing data in the name field is not anticipated to be an issue. 96.2% of the marital statuses were filled in, with 3.8% missing. For the interim, the marital statuses that are blank will be set to “N/A”. This is also a not null field in our company’s data base and can remain as “N/A”. 99% of the hire dates are present, with one date missing. A dummy date for this will be entered until the correct data can be found to change. By substituting dummy or placeholder information, the data set will remain searchable and useable for the remaining fields. Since this is an HR database, deleting rows would mean deleting employee records, which may not be advisable. The remaining 14 columns for our company’s database are complete, indicating 99.7% of the data fields are completed. The completeness of this dataset is good and the score is 3.
+	The evaluation of the data set’s uniqueness indicated there were no duplications of data that were evident. There is no apparent repetition of inputs and the data points all appear to be unique. The score for this dimension is 4. 
+	The validity, or integrity, of the data had various points where improvements could be noted. The data points that were determined to be invalid included a zip code of 6 digits, all of which were 9, when the expected input is 5 digits. 99% of the zip code data was valid, with this one exception. This one data point will be corrected to have 5 digits and the actual zip code will be found in cross-referencing the employee’s address. The pay rate field also indicated a negative hourly rate for one employee where the expectation is positive integers. The assumed correction for this will be to remove the minus from the data cell manually. 99% of the pay rate data is valid. Overall, 99.9% of the data set that will be imported is valid. The score for validity is 3. 
+	The consistency of the data set was poor in different columns of data. The termination dates, reasons for termination, and number of days employed were inconsistent. 92.4% of the reasons for termination were consistent with data indicated elsewhere and 7.6% were inconsistent. For these occurrences, the reason for termination will be deleted and the number of days employed is not imported and will be ignored. The 2 termination dates that were inconsistent with other information, such as termination reason or days employed, will remain. In another instance the age and date of birth were inconsistent. For this, the date of birth will be changed to a dummy value of 1/1/1900 and the age will not be changed as it will not be imported to our company’s database. Overall, 99.4% of the data is consistent. The overall rating for consistency is 3, though it should be noted that information regarding dates of hire, termination dates, and reasons for termination should be examined much more closely for accuracy. 
+	The accuracy of the data set is difficult to determine, though in conjunction with other dimensions of quality it can be determined that at least some of the data points are inaccurate. The lack of a last name for an employee, or a negative salary for another employee, are all examples of inaccuracies in this data set. A dummy zip code was entered and is not an accurate zip code for that employee. Multiple inaccuracies were also found in the dates of termination and/or reason for termination, though it is not clear which of these were inaccurate by looking at the data set. Performance score data, though not utilized by our company, was likely the most inaccurate, least updated column of data. This was excluded from this evaluation of data quality as it is not relevant to the data that will be imported. Overall, many of these inaccuracies will be deleted or a dummy value will be entered to hold the place of the cell so further analysis of the data set can proceed. Accurate information will be found by cross-referencing other sources of information in order to update with the actual data values. Based on the information available, 99.1% of the data is estimated to be accurate. The rating for accurace is 3. 
+
+	The total score for the data set is 18 out of a possible 24 points. There are some areas that will require monitoring to ensure the data is useful, including information around termination dates and reasons. Once these corrections are made, in transforming some of the data to meet our company’s business needs, the data can be more trustworthy going forward. The transformations include separating the first and last names of the employees and placing them in the corresponding columns. Also, the string inputs will be changed to categorical values for marital status, sex, and citizenship. The string of an employee’s race will be matched to the corresponding values in the table for race in our company, which will provide uniform data on employee race. The pay rate will also be rounded to give the closest whole dollar amount, as is utilized in our company’s database.  These transformations will incorporate the data from Wayne Enterprises into the database for Bruce, Inc. seamlessly. 
+ 
+References
+
+Askham, N., Cook, D., Doyle, M., Fereday, H., Gibson, M., Landbeck, U., Lee, R., Maynard, C., Palmer, G., & Schwarzenbach, J. (2013, October). THE SIX PRIMARY DIMENSIONS FOR DATA QUALITY ASSESSMENT Defining Data. DAMA UK. https://docplayer.net/3987248-The-six-primary-dimensions-for-data-quality-assessment.html
+
+
+DAT 325 Project Three Template
+Data Validation
+
+Human Resources Table
+
+	Excel Files
+	Source File	Anomalies	Import Data	Existing Data	Merge Data
+Count	105	0	105	205	310
+
+Data Set: Human Resources 
+Variable: Pay Rate by Department
+
+	Excel
+	Import Data	Existing Data	Merge Data
+MIN	15	14	14
+MAX	80	64	80
+AVERAGE	35.55	29.2	31.35
+
+
+Summary
+
+Describe how the distribution data tells you if the import changes the existing distribution. 
+
+	The distribution data shows that the range of the pay rates is incorporated in the merged data. The data imported from Wayne, Enterprises has a range of pay rates from 15 to 80 where Bruce, Inc. has a range of 14 to 64. The merged data now has a range of 14 to 80, taking the smallest minimum and the largest maximum as its new range. Additionally, the average for the merged data now falls between the averages for each of the individual data sets, as would be expected. 
+	These data sets can also be visualized with box plots, as depicted below, which show the ranges of the data, as well as the mean and median for each of the data sets. The box plot shows where half of the pay rates are for each of the data sets, as noted by the shaded areas. The data from Bruce, Inc. shows a significant number of outlying data points, which when the data sets are merged are no longer outliers. The mean and median for the merged data is also shown to fall between each of the individual company’s data sets in the box plot, which reinforces what is seen with the chart of numbers above. 
+
+
+ 
+
+	The two companies have only two departments in common, IT/IS and Production. Breaking the data down by department also shows that within each of the departments the combined data for average pay rate in the respective departments falls between each of the individual companies’ averages. 
+
+ 
+
+Why do the validation steps help to ensure that the final import data is clean and of high quality?
+
+	The more each of the dimensions of data quality can be satisfied, the higher quality the data will be. Validation allows specific dimensions to be examined regarding the “structure and content” of the data, as noted by Essnet Validat Foundation (2018), meaning that the accuracy, consistency, and validity are the most important aspects to ensuring the data set is worth using. 
+	The validation steps allow the data to be trusted. Knowing that the data imported has impacted the overall data set in a certain way, modifying the range of numbers and the average, shows that it is included in the merged data set. When these numbers are skewed or give unanticipated results, such as a range that does not match the smallest minimum and largest maximum of all data, or an average that changes more than expected or does not change at all, these are significant clues that the data imported is not trustworthy. Issues can include columns of data not aligning or duplication or deletion of data, and validations highlight the need for the merged data set to be explored further to identify where the error has occurred. 
+
+	
+ 
+References
+Essnet Validat Foundation. (2018). Methodology for data validation 1.1. https://ec.europa.eu/eurostat/cros/system/files/methodology_for_data_validation_v1.0_rev-2016-06_final.pdf
+
