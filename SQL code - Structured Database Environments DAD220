@@ -16,8 +16,7 @@ SELECT group_name, employees, surveys, COUNT( surveys ) AS test1,
     FROM a_test
     GROUP BY employees
 
-
-count product / count total returns  = percentage of returns that are a specific product
+-- count product / count total returns  = percentage of returns that are a specific product
 -- so XX% of returns are product ABC
 
 SELECT concat(round(( count(orders.Description)/count(RMA.RMAID)),2),'%') AS PercentageOfReturns, orders.Description
@@ -30,7 +29,7 @@ ORDER BY PercentageofReturns DESC;
 SELECT COUNT(DISTINCT Description)
 FROM orders;
 
---output
+--OUTPUT: 
 --There are 37566 RMAIDs
 --There are 37997 unique OrderIDs
 --There are 13 unique Descriptions
@@ -69,7 +68,7 @@ FROM RMA;
 --There are 37566 total returns. 
 --how many unique descriptions are there for products that are returned
 
-
+--OUTPUT: 
 --Products: 
 --Basic Switch 10/100/1000 BaseT 48 port
 --Enterprise Switch 10GigE SFP+ 48 port
