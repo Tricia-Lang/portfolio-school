@@ -1,0 +1,201 @@
+-- TMLang
+-- SQL code for DAD220 - Structured Database Environments
+
+
+select count(RMA.OrderID) as NumReturns, customers.State
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+INNER JOIN customers
+ON orders.CustomerID = customers.CustomerID
+GROUP BY customers.State
+ORDER BY NumReturns DESC;
+
+SELECT group_name, employees, surveys, COUNT( surveys ) AS test1, 
+        concat(round(( surveys/employees * 100 ),2),'%') AS percentage
+    FROM a_test
+    GROUP BY employees
+
+
+count product / count total returns  = percentage of returns that are a specific product
+-- so XX% of returns are product ABC
+
+SELECT concat(round(( count(orders.Description)/count(RMA.RMAID)),2),'%') AS PercentageOfReturns, orders.Description
+FROM orders
+INNER JOIN RMA
+ON orders.OrderID = RMA.OrderID
+GROUP BY orders.Description
+ORDER BY PercentageofReturns DESC;
+
+SELECT COUNT(DISTINCT Description)
+FROM orders;
+
+--output
+--There are 37566 RMAIDs
+--There are 37997 unique OrderIDs
+--There are 13 unique Descriptions
+
+SELECT COUNT(DISTINCT orders.Description) as Products, COUNT(RMA.RMAID) as Returns
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+ORDER BY Products DESC;
+
+SELECT * 
+FROM RMA 
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+WHERE orders.Description LIKE '%48 port%';
+
+--Returns 18687 rows
+
+SELECT COUNT(DISTINCT orders.Description) as Products
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+ORDER BY Products DESC;
+
+--There are 9 unique Descriptions in RMA
+
+SELECT DISTINCT orders.Description as Products, COUNT(RMA.RMAID)
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+ORDER BY Products DESC;
+
+SELECT COUNT(RMAID)
+FROM RMA;
+
+--There are 37566 total returns. 
+--how many unique descriptions are there for products that are returned
+
+
+--Products: 
+--Basic Switch 10/100/1000 BaseT 48 port
+--Enterprise Switch 10GigE SFP+ 48 port
+--Enterprise Switch 40GigE SFP+ 48 port
+--Advanced Switch 10 GigE Copper/Fiber 44 port coppe
+--Enterprise Switch 10GigE SFP+ 24 Port
+--Enterprise Switch 40GigE SFP+ 24 port
+--Basic Switch  10/100/1000 BaseT 8 port
+--Advanced Switch 10GigE Copper 24 port
+--Basic Switch 10/100/1000 BaseT 24 port
+
+--SKU
+-- +------------+
+-- | BAS-48-1 C |
+-- | ENT-48-10F |
+-- | ENT-48-40F |
+-- | ADV-48-10F |
+-- | ENT-24-10F |
+-- | ENT-24-40F |
+-- | BAS-08-1 C |
+-- | ADV-24-10C |
+-- | BAS-24-1 C |
+-- +------------+
+
+SELECT COUNT(DISTINCT orders.SKU) as NumSKUs
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+ORDER BY NumSKUs DESC;
+
+-- 9
+
+SELECT COUNT(orders.SKU) as NumSKUs, orders.SKU
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+ORDER BY NumSKUs DESC;
+
+SELECT SKU, Count(SKU)
+FROM orders;
+
+SELECT SKU, COUNT(SKU) as NumSKUs
+FROM orders
+GROUP BY SKU
+ORDER BY NumSKUs DESC;
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as NumReturns, SUM(COUNT) FROM (COUNT(RMA.RMAID)) as TotReturns
+FROM orders
+INNER JOIN RMA
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY NumReturns DESC;
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as NumReturns, SUM(COUNT(RMA.RMAID)
+FROM orders
+INNER JOIN RMA
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY NumReturns DESC;
+
+SELECT COUNT(RMAID) as TotalReturns
+FROM RMA; 
+
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as NumReturns
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY NumReturns DESC;
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as NumReturns
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY NumReturns DESC;
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as 'Number of Returns', SUM(COUNT(RMA.RMAID)) as 'Total Returns' 
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY 'Number of Returns' DESC;
+
+COUNT(RMA.RMAID) * 100 / (SELECT SUM(RMA.RMAID) AS Total) AS `Percent of Total Returns`
+
+SELECT (COUNT(RMAID)
+FROM RMA;
+
+SELECT orders.SKU, COUNT(RMA.RMAID) as NumReturned, 
+(((COUNT(RMA.RMAID))/ 37566) * 100) as 'Percentage of Total Returns' 
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+GROUP BY SKU
+ORDER BY NumReturned DESC;
+
+select orders.SKU, COUNT(RMA.Reason) as Returns, RMA.Reason
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+INNER JOIN customers
+ON orders.CustomerID = customers.CustomerID
+WHERE customers.State = 'Massachusetts'
+GROUP BY orders.SKU, RMA.Reason
+ORDER BY Returns DESC;
+
+SELECT Description
+FROM orders
+WHERE SKU = 'BAS-48-1 C'
+LIMIT 1;
+
+SELECT count(RMA.OrderID) as NumReturns, customers.State, count(orders.OrderID) as NumOrders
+FROM RMA
+INNER JOIN orders
+ON orders.OrderID = RMA.OrderID
+INNER JOIN customers
+ON orders.CustomerID = customers.CustomerID
+GROUP BY customers.State
+ORDER BY NumReturns DESC;
+
+select customers.State, count(orders.OrderID) as NumOrders
+FROM orders
+INNER JOIN customers
+ON orders.CustomerID = customers.CustomerID
+GROUP BY customers.State
+ORDER BY NumOrders DESC;
+
