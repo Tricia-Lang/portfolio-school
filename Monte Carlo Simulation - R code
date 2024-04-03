@@ -1,0 +1,35 @@
+# Monte Carlo Simulation - R
+# TMLang
+# 10.16.2022
+
+iihs_data_EX8 <- read.csv("C:/Users/trici/OneDrive/Desktop/DAT 610 - Optimization & Risk Assessment/DAT 610 IIHS Data.csv")
+View(iihs_data_EX8) 
+table(iihs_data_EX8$YEAR)
+mean(iihs_data_EX8$Collision.)
+table(iihs_data_EX8$YEAR)*mean(iihs_data_EX8$Collision.) # take note of these values 
+yearMean <- mean(table(iihs_data_EX8$YEAR)) 
+
+## poisson - Ahrens, J. H. and Dieter, U. (1982). Computer generation of Poisson deviates from modified normal distributions. ACM Transactions on Mathematical Software, 8, 163–179.
+rpois(10, yearMean) # 10 samples   
+rpois(1, yearMean) # 1 sample     - AVERAGE LOSS FREQUENCY
+
+## Determine the average and standard deviation of the “Collision” loss amount.
+m <- mean(iihs_data_EX8$Collision.)
+s <- sd(iihs_data_EX8$Collision.)
+mu <- log(m^2/sqrt(s+m^2)) # mean lognormal distribution
+sigma <- sqrt(log(1+s/m^2))
+
+print(sigma) ## value of sigma
+
+## draw a sample value from a lognormal distribution.
+rlnorm(10,mu,sigma) # 10 samples
+rlnorm(1,mu,sigma) # 1 sample       - AVERAGE LOSS SEVERITY
+
+rpois(1, yearMean) * rlnorm(1,mu,sigma)  # iteration 1
+rpois(1, yearMean) * rlnorm(1,mu,sigma)  # i 2
+rpois(1, yearMean) * rlnorm(1,mu,sigma)  # i 3
+rpois(1, yearMean) * rlnorm(1,mu,sigma)  # i 4
+rpois(1, yearMean) * rlnorm(1,mu,sigma)  # i 5       - MAXIMUM TOTAL LOSS
+
+hist(rpois(1000, yearMean)*rlnorm(1000, mu, sigma), col= 'orange', xlab='Max Total Loss', main='Distribution of Max Total Loss')
+
