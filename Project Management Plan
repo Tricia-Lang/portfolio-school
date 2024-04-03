@@ -1,0 +1,177 @@
+Project Manager Name:
+
+Tricia M. Lang
+
+Project Management Plan
+
+Hightower Global Solutions: HighLEARN
+
+Final Project Plan
+
+
+
+Project Management Plan
+
+Submitted to:
+
+Dr. Randy Butler 
+Project Initiation
+
+Part A Feasibility
+	Various projects may be presented at a time and deciding between which to pursue can be accomplished with a scoring system that is based on whether resources would be available, if the project would be profitable, or if the outcomes are even attainable by the staff of the organization (Mind Edge, Inc., 2014). Financial factors can be measured through different techniques, such as cost-benefit ratio, return on investment, and internal rate of return. Other factors may also play into the decision-making process for selecting a project.
+Some projects may not align with the company’s objectives, utilizing practices that may be more cost-effective but do not match the presentation as supporting environmental conservation or fair wages. Other factors may be that an organization does not have the man-power or knowledge to execute a project. These may be non-numeric concepts that influence decision-making. 
+Part B Strategic Goals
+Projects taken on by an organization are linked to the strategic goals of that organization. If they were not, they would not be projects worthy of the investment. Aligning the projects to the strategic goals assists in keeping the project on track to be successful in meeting the organization’s need. To do this, a traceability matrix can be utilized that identifies the requirements and the related business need or objective (Mind Edge, Inc., 2014). This document is updated throughout the course of the project. 
+Benefits of this alignment include reinforcing the usefulness of the project, which may seem bogged down with minutiae by the team members but are helping the organization uphold its objectives. The traceability matrix assists with pointing out the bigger picture of the smaller tasks. Knowing how the project tasks relate to the company overall may also provide opportunities to incorporate other areas of the organization and engage assistance. 
+Part C Project Charter
+	The project charter is a high-level document that gives an overview of the major characteristics of the project, including its purpose, what it aims to accomplish, and how the accomplishment will be measured. This document gives a brief synopsis with the expected time and cost to complete, allowing the project manager to move forward with completing the project (Mind Edge Inc., 2014). Including this document in the project management plan allows for the project manager to implement the strategies needed to complete the project. 
+Project Title
+HighLEARN
+Date
+January 15, 2023
+Business Case
+Sell clients appropriate products from the continually expanding line of offerings. 
+Project Purpose
+Develop intranet portal for sales training and information.
+Project Objectives
+Hightower’s strategic objectives are to collate information on Hightower product offerings, webinars and videos with product specialists, and foster communication internally between sales associates across all Hightower locations.
+Project Deliverables
+o	Develop portal
+o	User interface, theme, and style sheets
+o	Portal administration complete and accepted
+o	Administrative page groups and access control
+o	Content uploaded
+o	Portal tested for functionality
+o	Infrastructure and Security
+o	Approval for architecture for implementation
+o	Servers secured for development, staging, and production
+o	Firewalls configured
+o	Integrate infrastructure and security systems
+o	Complete and test log-in/registration systems
+o	Create log-ins/user profiles 
+o	Create content
+o	Product content modules
+o	Interviews with SMEs and Sales Reps
+o	Product sales summaries
+o	Sales case studies
+o	SME videos
+o	Presentations, demos, and webinars for content modules
+o	Documentation 
+o	Coding Standards and Procedures
+o	Test and Acceptance Measurements
+Project Personnel
+Ricardo Contin – Director of Learning and Development
+Steve Quan – Hightower IT Operations Specialist
+Shannon Valley – Hightower IT Systems and Security
+Monica Ianucci – Content Specialist
+Jonathan Brant – Content Specialist
+Risks
+•	Website does not meet user requirements or functionality.
+•	S. Valley and S. Quan are not available to contribute to the project until July 15, 2023.
+•	Marketing department has not endorsed the approach; believe they should go with Microsoft Sharepoint system.
+•	Security of intranet/portal: no external access beyond firewall.
+Schedule Summary
+Seven months: June 1, 2023 through January 1, 2024
+Budget Summary
+Projected Budget: $1.5 million
+Measurable Success Criteria
+o	Fully functional intranet/portal created with content needed for sales associates.
+o	Sales associates able to access the intranet/portal.
+Other Project Limitations
+TBD
+Approval Signatures/Approval Date
+Peter McKenzie         January 15, 2023
+
+Part D High-Level Timeline
+	The high-level timeline shows the overall tasks that are required to complete the project without going into significant detail. This timeline shows the expected duration of those tasks, the principal players, and the cost. This timeline is useful to the stakeholders and the project manager for the overall view of when deliverables should be expected. 
+ 
+Part E Stakeholder Concerns
+	Stakeholders are an important voice in the project creation, execution, and completion. The input provided ensures the project is not seen solely through the eyes of those who are engaged in completing the tasks, but also viewing the impact and the outside factors that may impact the project. Some of the stakeholders have greater influence on the project (Hendricks, 2022), but the concerns of all stakeholders have value and can improve the project. Those who are internal may identify an area of the company that would be affected in ways not thought of by the project team, and those external may provide a useful outside perspective to the project. 
+ 
+Part F Stakeholder Support
+The stakeholder register identifies all the stakeholders for this project, their relationship to the project and the level of support. Some of the higher-level individuals in the company, such as the CEO Carol Bailey, have a role of medium support as they are affected but may not be directly involved with the project. Others, such as the Director of Learning and Development, are more directly involved and impacted directly and have roles that are high support. The different roles and perspectives of these individuals help shape the project to be as inclusive and thorough of potential enhancements or issues possible. 
+ 
+Part G Stakeholder Analysis Template
+ 
+ 
+Project Planning
+ 
+Part A Business Requirements
+	Hightower is implementing an intranet/portal resource for sales associates to access in order to stay informed on the latest product developments. The business requirements identified by the project stakeholders include a platform to access trainings, information, and news that will help improve sales performance. The portal will need to be accessible by any sales associate with log-in credentials, regardless of their physical location. The portal will need to be able to be updated as new information and trainings become available. Additionally, it must have the ability for sales associates to post questions, read answers from others, and exchange information in a blog or forum style.
+	The software will need to meet security requirements, as there may be confidential or proprietary information stored on the server, such as product details or upcoming products. There must be documentation on how to update and maintain the portal. Staff must also be trained on the system in order to use it independently in the field. 
+Part B Subject Matter Experts
+	Subject Matter Experts (SMEs) will be consulted for each of the business requirements and some interactions may require different styles of communication as outlined in Mind Edge (2014). Interactive communication with the SMEs will allow the free flow of information back and forth. This style of communication will be very helpful in identifying what features may be most helpful within the constraints of the software. 
+An example of interactive communication is in consulting with the marketing team on how to best represent the information they wish to perpetuate to the sales associates through HighLEARN a discussion of real-time updates to market performance may occur. A task like this could be out of scope for the project at this time, but understanding what the reasoning for wanting this feature, as well as how this may best be achieved would be communicated in an interactive communication style. 
+	Discussions with the sales representatives and the product SMEs would a pull communication style, where the questions are asked as needed in an interview or interrogatory fashion. This allows the information to be received on the schedule of the team member who is seeking it. A push communication style will be used when there are approaching deadlines for information or task completion, and the intention is to disseminate information via a memo or email. 
+Part C Standard Requirements Template
+ 
+Part D Format
+It is important the requirements are able to be drawn back to what the objective of the project is, which can best be seen with a requirements traceability matrix. This will help keep the project organized and focused, while also being updated throughout the project (Mind Edge, 2014). Understanding how the individual business requirements relate to the overall objective can be helpful for the individuals completing the tasks, which may seem removed at times when programming or manual labor is detail work of the moment. 
+Another benefit of using a tool such as a traceability matrix is that the tasks that are added to the project must be able to be traced back to the project objective. In doing so, the potential for added and unplanned-for enhancements can be avoided, or the creep can be reduced. This will help the project stay on task and on schedule. 
+Part E Project Schedule
+ 
+
+Part F Estimate
+	The scheduling of the resources for the project completion has the potential to extend the time to complete tasks. As an example, for HighLEARN, the Systems Engineering team is required for much of the coding and application development. Tasks that must be completed in succession are limited by the resource of labor available, potentially extending the time for project completion or increasing the budgeted resources beyond the initial estimate. 
+ 
+Part G Refine Estimate
+ 
+Project Execution
+Part A Implementation Approach
+	Two common approaches to projects are the waterfall methodology and agile. A waterfall approach is linear, and tasks are completed in succession, compared to agile, which tackles different components simultaneously and works in a more cyclical fashion (Hoory, 2022). The waterfall methodology is seen as more structured and formulaic since the successive tasks must be completed before moving to the next. This helps with maintaining progress as the deliverables must be submitted before the next phase is started. However, this requires much more front-loading of the requirements gathering with little room for modifications. 
+	An Agile methodology works on several different components of the project simultaneously within a sprint period. Some sprints will produce deliverables and others may not. A benefit to this is that the process is much more fluid and adaptable and often can lead to a quicker deployment of a minimum viable product (Rodov and Teixidó, 2016). On the other hand, a drawback to this quick release is that ongoing updates and modifications may be required to make the more ideal product as outlined by the business requirements. While Hightower is looking to implement this software within the timeframe noted, it will be available for ongoing updates and need not be perfect upon deployment, as with a product that is inaccessible for software updates. 
+	As pointed out in a conference paper by Rodov and Teixidó, there is room for both approaches to be used effectively (2016). Many of the communication techniques used in an Agile framework are very helpful to maintain contact with the key stakeholders. A Kanban board is one way to ensure the communication of the progress achieved, as well as what is currently being worked on and what has not been successful. As well, the time spent on documentation in a waterfall project is much greater than that of an Agile project, which can delay deployment. Documentation will be a significant step before deployment of this software, but this can also be done in an Agile framework since documentation every step of development for the software will not be necessary. 
+	Overall, an Agile approach would be most useful for Hightower in this project. The opportunities for clear communication and incorporating any modifications that may arise in order to better meet the business objectives is easier to accomplish with agile. With testing and modifications able to be made, the agile approach offers the opportunity for the project team to put forth a complete product in the time required. 
+Part B Project Schedule
+	There will be options to employ to keep the project on track should the resources and project constraints not match (Mind Edge, 2014). To target limited resources leading to a longer project time, crashing can be used. This would increase the resource allocation to the project in order to decrease the time to delivery. The increase in resources also necessitates an increase in cost. Fast-tracking is an alternative to the time constraints, which has components of the project worked on in parallel rather than sequentially. This can decrease the time it takes to complete the project, but also has the potential for increased errors or needing to correct completed tasks to work with other components. 
+One of the options to address a shortage of resources when the timeline is not as critical is to apply resource leveling. This modifies the scheduled start and finish dates around what resources are available. Resource smoothing targets the activities completed to meet the constraints of the resources. This may lead to less complete features or components, but still deliver the minimum viable product. 
+Faced with a need to adjust the project schedule, fast-tracking is the least impactful on the timeline as well as budget. For a shortage of resources, resource smoothing to reduce resource consumption by specific activities that are deemed less critical would be less detrimental to the deployment of a product that meets the basic needs and closer to the timeline identified. Ideally, the project can be completed accurately and on-time with modifications made through fast-tracking, with the use of resource smoothing if the timeline is not compressed significantly enough.
+Part C Keep Leadership Apprised
+Leadership will be kept in communication with the status of the project and the progress along the way through tools such as a Kanban board. Additionally, there will be periodic communications by individuals responsible for specific business requirements that will funnel through the Project Manager. Key stakeholders can also convene meetings with the Project Manager, or all stakeholders, if necessary, for the aggregation of the requirement statuses beyond what is communicated in the outlined communication grid.
+ 
+Project Control
+Part A Change Management
+	Changes requested periodically through the course of a project will be assessed for feasibility or a change in scope. Identifying whether the change will extend the time the project will take to completion, increase the financial budget needs, and if it falls within the traceability matrix, the changes can be approved or rejected. Some changes may appear to be enhancements or a change in scope, but with minimal impact on the outcome of the budget or timeline of the project may be approved. Other tasks may be seen as unnecessary, both for cost and time resources, and not meet the scope of the current project. 
+ 
+Part B Risk Management
+	A risk management matrix that plots the probability of an event and the impact of that occurrence provides a qualitative analysis of the risk (Mind Edge, 2014). Quantitative risk is measured numerically such as with a sensitivity analysis and/or a decision tree. Copper Team (2018) notes that projects can benefit from qualitative risk analysis without completing quantitative analyses. Though it is pointed out by Emblemsvåg and Kjølstad (2006) that qualitative risks have greater potential of variability between analyses in the same company, but can be an informative adjunct to the quantitative risk measures. 
+	For Hightower’s HighLEARN project, the initial assessment of qualitative analysis of risk would be the first step, with anything notably alarming for potential high risk warranting further explanation, possibly through quantitative risk analysis. This would be completed through a risk register. By approaching the risk assessment and management in this way, an action plan for mitigating the risk can be initiated from the start. Should there be a risk that perpetuates despite mitigation strategies or identified as being a full stop issue by those working on the mitigation plan, further analysis can be completed. 
+ 
+Part C Issues Management
+	A way to manage issues is to create service tickets that log and identify the problem. Within the process of filing the ticket, the issue is to be identified, with how it is negatively impacting the process, when it was identified, and by whom. Once this ticket it is received it is assigned and triaged to the corresponding area to identify the issue, the root cause, and identify a due date and remediation. The progress of this can be tracked on a Kanban board, which shows the status of the issue and all open tickets at a glance. 
+ 
+Project Closeout
+Part A Close Project Process
+	Closing a project should be thought about and planned for early in the project management process (Mind Edge, 2014). This keeps the project from becoming a “Never Ending Project,” where there is no clear maintenance and responsibility for the deliverable after it has been delivered, or an “Orphan Product,” which is unable to be used with a lack of direction to those assuming the product (Azis, 2015). Planning for the project ending is as important as planning the project itself. 
+	The closing process includes several steps outlined by the Lucid Content Team (2023):
+•	Transferring all deliverables
+•	Confirm project completion
+•	Review all contracts and documentation
+•	Release resources
+•	Conduct a post-mortem
+•	Archive documentation
+•	Celebrate the accomplishments of the project team
+Once the project is determined to be completed, the deliverables for the project are to be transferred. For this project, the HighLEARN platform will be released for use by the employees and downloaded to the company devices. The completion will be determined by ensuring all requirements have been met that were determined at the outset and along the way. The contracts and documentation of the project will be reviewed to ensure there are no unaddressed risk issues, errors, or missing requirements. 
+	When the product is complete the resources allocated would also need to be released. This includes staff being freed up to work on other projects, materials and resources or equipment being reallocated, and the financials settled. The post-mortem identifies any areas of success as well as areas of need, the parts of the project that went smoothly and those that could be improved upon next time. Documentation for this is then archived for future reference when estimating similar projects, warranty claims that may return, or for other future needs. Finally, the team would have their work acknowledged with the accomplishments recognized. 
+	To do this effectively as a Project Manager, and ensure that these steps are completed, reviewing documentation will be particularly important. Identifying the areas that were requirements, risks, and incomplete tasks to compare to the completed product will ensure the satisfaction of the project. 
+Part B Warranty Period Process
+	Warranties are designed to ensure the product works as designed. The developer of the product is responsible, per the warranty, for errors or malfunctions that are the result of a system failure or problem (Karyukin, 2012). The warranty allows for the client’s problems to be managed within a set time frame, reducing concerns that there may be an immediate failure noted that will not be rectified without additional cost. 
+	Karyukin (2012) outlines some requirements to be fulfilled for a warranty to be upheld. The first is that documentation of the failure is to be provided, as well as the reason for that failure being the result of a developmental fault. The customer would also have to indicate that the software was only used as intended without any modifications made to it. Finally, the error encountered should be within the scope of the agreed-upon requirements of the project. This limits enhancements from being included as a warrantable fix by the developers. 
+	The warranty is an insurance policy for the customer as it assures them for the identified period that if anything breaks it will be fixed. As can occur in software, in particular, bugs may escape the testing procedure, only to be discovered when in live use. A warranty will increase the consumer confidence in the product for a period of transition from the developers. 
+Part C Lessons Learned Template
+ 
+
+ 
+References
+Aziz, E. E. (2015). Project closing: the small process group with big impact. Paper presented at PMI® Global Congress 2015—EMEA, London, England. Newtown Square, PA: Project Management Institute.
+Burek, P. (2008). Creating clear project requirements: differentiating "what" from "how" Paper presented at PMI® Global Congress 2008—North America, Denver, CO. Newtown Square, PA: Project Management Institute.
+Copper Team. (2018, January 22). Qualitative Project Risk Analysis — Why It’s Important? Retrieved December 14, 2022, from https://www.copperproject.com/2018/01/qualitative-project-risk-analysis-important/
+Emblemsvåg, J., & Endre Kjølstad, L. (2006). Qualitative risk analysis: some problems and remedies. Management Decision, 44(3), 395–408. https://doi.org/10.1108/00251740610656278
+Hendricks, A. (2022, October 14). The importance of stakeholders: identifying and prioritizing stakeholder engagement. Simply Stakeholders. https://simplystakeholders.com/the-importance-of-stakeholders/
+Hoory, L. (2022, August 10). Agile Vs. Waterfall: Which Project Management Methodology Is Best For You? Forbes Advisor. https://www.forbes.com/advisor/business/agile-vs-waterfall-methodology/
+Karyukin, T. (2012, November 21). Software warranty and technical support. EDISON. Retrieved January 15, 2023, from https://www.edsd.com/about/blog/software-warranty-and-technical-support
+Lucid Content Team. (2023). Get it done: Nailing the project management closure process. Lucidchart Tech Blog. Retrieved January 5, 2023, from https://www.lucidchart.com/blog/nailing-the-project-management-closure-process
+Mind Edge Inc. (2014). QSO-640: Project management (custom) 2014 [e-learning resource]. Retrieved from: https://snhu.mindedgeonline.com/content.php?cid=51027
+Rodov, A., & Teixidó, J. (2016, May 13). Blending Agile and Waterfall The Keys to a Successful Implementation. PMI.org. https://www.pmi.org/learning/library/blending-agile-waterfall-successful-integration-10213
+Schembri, J. (2012). The Process of Determining Business Requirements. ModernAnalyst.com. https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/2186/The-Process-of-Determining-Business-Requirements.aspx
+
